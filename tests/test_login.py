@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from assertpy import assert_that, soft_assertions
 
@@ -52,3 +54,8 @@ class TestLogiPage:
         res = login_page.page.text_content(selector='//html/body/div/div/form/div[2]/div[2]/label[2]')
         with soft_assertions():
             assert_that(res).is_equal_to("Неправильний пароль")
+
+
+
+
+

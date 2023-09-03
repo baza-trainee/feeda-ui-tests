@@ -1,4 +1,4 @@
-class AddParticipantLocators:
+class AddAndChangeParticipantLocators:
     FIRSTNAME = '//html/body/div/form/div[1]/div[1]/div[1]/div/input'
     LASTNAME = '//html/body/div/form/div[1]/div[1]/div[2]/div/input'
     STACK = '//html/body/div/form/div[1]/div[2]/div[1]/div/input'
@@ -24,6 +24,7 @@ class AddParticipantLocators:
     EMAIL = '//html/body/div/form/div[2]/div[3]/div[2]/div/input'
     BUTTON_ADD_PROJECT = '//html/body/div/form/div[3]/div[1]/button'
     BUTTON_SAVE_CHANGES = '//html/body/div/form/div[4]/button[1]'
+    BUTTON_SAVE_CHANGES_IN_CHANGE_PARTICIPANT = '/html/body/div/form/div[4]/button[1]'
     BUTTON_DONT_SAVE_CHANGES = '//html/body/div/form/div[4]/button[2]'
     BUTTON_LIST_PROJECT = '/html/body/div/form/div[3]/div[2]/div/label/div/div/div[1]/div[2]'
     BUTTON_DELETE_PROJECT = '/html/body/div/form/div[3]/div[2]/button/svg'

@@ -21,3 +21,4 @@ class BasePage:
 
     def navigate_to(self, url: str):
         self.page.goto(url)
+

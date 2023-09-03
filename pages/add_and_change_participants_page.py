@@ -1,30 +1,15 @@
 from pages.base_page import BasePage
-from locators.add_participant_locators import AddParticipantLocators
+from locators.add_and_change_participant_locators import AddAndChangeParticipantLocators
 
 
-class AddParticipantPage(BasePage):
-    locator = AddParticipantLocators
-
-    # def enter_first_name(self, firs_name: str):
-    #     firs_name_input = self.find_element(locator=self.locator.FIRSTNAME)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(firs_name)
+class AddAndChangeParticipantPage(BasePage):
+    locator = AddAndChangeParticipantLocators
 
     def enter_first_name(self, firs_name: str):
         self.fill_element(locator=self.locator.FIRSTNAME, text=firs_name)
 
-    # def enter_last_name(self, last_name: str):
-    #     firs_name_input = self.find_element(locator=self.locator.LASTNAME)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(last_name)
-
     def enter_last_name(self, last_name: str):
         self.fill_element(locator=self.locator.LASTNAME, text=last_name)
-
-    # def enter_stack(self, stack: str):
-    #     firs_name_input = self.find_element(locator=self.locator.STACK)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(stack)
 
     def enter_stack(self, stack: str):
         self.fill_element(locator=self.locator.STACK, text=stack)
@@ -33,31 +18,14 @@ class AddParticipantPage(BasePage):
         login_button = self.find_element(locator=self.locator.LIST_SPECIALITY)
         login_button.click()
 
-
-    # def enter_city(self, city: str):
-    #     firs_name_input = self.find_element(locator=self.locator.CITY)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(city)
-
-
     def enter_city(self, city: str):
         self.fill_element(locator=self.locator.CITY, text=city)
-
-    # def enter_comment(self, comment: str):
-    #     firs_name_input = self.find_element(locator=self.locator.COMMENT)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(comment)
 
     def enter_comment(self, comment: str):
         self.fill_element(locator=self.locator.COMMENT, text=comment)
 
     def click_send_letter(self):
         self.click_element(locator=self.locator.BUTTON_SEND_LETTER)
-
-    # def enter_discord(self, discord: str):
-    #     firs_name_input = self.find_element(locator=self.locator.DISCORD)
-    #     firs_name_input.click()
-    #     firs_name_input.fill(discord)
 
     def enter_discord(self, discord: str):
         self.fill_element(locator=self.locator.DISCORD, text=discord)
