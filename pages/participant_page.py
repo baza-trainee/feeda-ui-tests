@@ -16,3 +16,6 @@ class ParticipantPage(BasePage):
 
     def click_change_participant(self):
         self.page.locator(self.locator.CHANGE_PARTICIPANT).click()
+
+    def click_approve_delete(self):
+        self.click_element(locator=self.locator.APPROVE_DELETE)

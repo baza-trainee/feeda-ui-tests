@@ -18,6 +18,19 @@ class AddAndChangeParticipantPage(BasePage):
         login_button = self.find_element(locator=self.locator.LIST_SPECIALITY)
         login_button.click()
 
+    def click_qa(self):
+        self.click_element(locator=self.locator.QA)
+
+    def click_list_experience(self):
+        self.click_element(locator=self.locator.LIST_EXPERIENCE)
+    def click_experience_true(self):
+        self.click_element(locator=self.locator.EXPERIENCE_TRUE)
+
+    def click_list_type_participant(self):
+        self.click_element(locator=self.locator.LIST_TYPE_PARTICIPANTS)
+
+    def click_type_participant_free(self):
+        self.click_element(locator=self.locator.TYPE_PARTICIPANT_FREE)
     def enter_city(self, city: str):
         self.fill_element(locator=self.locator.CITY, text=city)
 

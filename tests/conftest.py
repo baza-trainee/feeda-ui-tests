@@ -65,9 +65,9 @@ def add_participants_page(config, login):
 @pytest.fixture
 def change_participants_page(config, login):
     page = login
-    id = "026b1fc3-a089-4788-8bf6-7833343e4197"
-    page.wait_for_timeout(5000)
-    page.goto(config.get('base_url')+f'/participants/edit/{id}')
+    # id = "02090f68-d9fd-4e80-8a56-a29a28058c3e"
+    # page.goto(config.get('base_url')+f'/participants/{id}')
+    page.goto(config.get('base_url')+f'/participants')
     change_participants_page = AddAndChangeParticipantPage(page=page)
     yield change_participants_page
 
